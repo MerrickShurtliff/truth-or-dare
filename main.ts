@@ -13,13 +13,37 @@ input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     WYW = randint(0, 3)
     if (WYW == 0) {
-        basic.showArrow(ArrowNames.North)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
     } else if (WYW == 1) {
-        basic.showArrow(ArrowNames.East)
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            # . # . #
+            . # # # .
+            . . # . .
+            `)
     } else if (WYW == 2) {
-        basic.showArrow(ArrowNames.South)
+        basic.showLeds(`
+            . . # . .
+            . . . # .
+            # # # # #
+            . . . # .
+            . . # . .
+            `)
     } else if (WYW == 3) {
-        basic.showArrow(ArrowNames.West)
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
     }
 })
 basic.forever(function () {
